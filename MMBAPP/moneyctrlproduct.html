@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/shenqianxiangqin.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header  ">
+
+           <div class="h_main  clearfix">
+               <div class=" h_title ">
+                   <span>国内折扣</span>
+                   <div class="h_right_product">
+                        <img src="images/header_app.png" alt="">
+                    </div>
+               </div>
+            
+           </div>
+       </div>
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+           <!-- 商品信息 -->
+           <div class="product_tpl">
+
+      
+            
+          
+        </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+    {{each result v i }}
+   
+    <div class="right">
+            <p>{{v.productName}}</p>
+            <p><span>{{v.productFrom}} |</span><span> {{v.productTime}}</span><span> {{v.productTips}}</span></p>
+    </div>
+        <!-- 商品评论 -->
+        <div class="comment ">
+            <div class="left clearfix ">
+             {{@v.productImgSm}}
+           {{v.productInfo2}}
+           </div>
+        </div>
+        <div class="right1 ">
+                {{@v.productImgLg}}
+         </div>
+         <!-- 货物地区列表 -->
+         <div class="buy_list">
+            {{@v.productCity}}
+         </div>
+           <!-- 前往购买 -->
+           <div class="buy">
+                <button class="buyBtn">前往购买</button>
+            </div>
+            <!-- 二维码 -->
+            <div class="advertisement">
+               <img src="../images/mmbweixin2.png" alt="">
+            </div>
+            <!-- 发表评论 -->
+            <div class="sendmsg">
+             {{@v.productComment}}
+         
+            </div>
+    {{/each}}
+    </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/shenqianxiangqin.js"></script>
+</body>
+</html>

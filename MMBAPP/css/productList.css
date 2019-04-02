@@ -1,0 +1,100 @@
+.mmm_main {
+  width: 100%;
+}
+/* 面包屑导航 */
+.navagation {
+  width: 100%;
+  height: 0.75rem /* 75/100 */;
+  background-color: #f0f0f0;
+  padding: 0 0.12rem /* 12/100 */;
+  border-top: 0.02rem /* 2/100 */ solid #ccc;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+}
+.navagation ul {
+  margin-top: 0.19rem /* 9/100 */;
+  overflow: hidden;
+  font-size: 0.27rem /* 27/100 */;
+}
+.navagation ul li {
+  float: left;
+}
+.navagation .screening {
+  margin-top: 0.07rem /* 7/100 */;
+  width: 1.24rem /* 124/100 */;
+  height: 0.6rem /* 60/100 */;
+  border-radius: 0.15rem /* 5/100 */;
+  color: black;
+  font-size: .27rem;
+  background-color: #e7e7e7;
+}
+/* 商品列表 */
+.productlist ul {
+  width: 100%;
+  background-color: #fff;
+}
+.productlist ul li {
+  width: 100%;
+  height: 2.36rem /* 260/100 */;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+  padding: 0.1rem /* 10/100 */;
+}
+.productlist ul li .left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+.productlist ul li .left img {
+  width: 100%;
+  height: 100%;
+}
+.productlist ul li .right {
+  float: right;
+  width: 70%;
+  height: 100%;
+  padding: 0.1rem /* 10/100 */;
+  line-height: .45rem;
+}
+.productlist ul li .right p {
+  font-size: 0.25rem /* 30/100 */;
+}
+.productlist ul li .right p:last-child {
+  font-size: .25rem;
+  color: #999;
+}
+.productlist ul a {
+  display: block;
+  height: 100%;
+}
+.sorter {
+  width: 100%;
+  height: 1.43rem /* 143/100 */;
+  background-color: #efefef;
+  font-size: 0.27rem /* 27/100 */;
+}
+.sorter .sorter_content {
+  width: 100%;
+  height: 0.95rem /* 95/100 */;
+  background-color: #fff;
+}
+.sorter .sorter_content ul {
+  width: 100%;
+  height: 100%;
+}
+.sorter .sorter_content ul li {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  padding-top: 0.23rem /* 19/100 */;
+}
+.sorter .sorter_content ul li button {
+  width: 1.65rem /* 165/100 */;
+  height: 0.7rem /* 70/100 */;
+  border-radius: 0.05rem /* 15/100 */;
+}
+.sorter .sorter_content ul li .sorter_select {
+  width: 1.54rem /* 154/100 */;
+  height: 0.7rem /* 70/100 */;
+  outline: none;
+  border-right: 0.35rem /* 10/100 */ solid #ccc;
+}

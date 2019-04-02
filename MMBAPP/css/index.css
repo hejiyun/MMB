@@ -1,0 +1,126 @@
+.mmm_main {
+  width: 100%;
+  position: relative;
+}
+.category {
+  width: 100%;
+  margin-top: 0.2rem /* 20/100 */;
+  background-color: #fff;
+  padding-top: 0.5rem /* 50/100 */;
+}
+.category ul {
+  width: 100%;
+}
+.category ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 0.14rem /* 13/100 */;
+}
+.category ul li a {
+  display: block;
+  height: 100%;
+}
+.category ul li a img {
+  width: 1.04rem /* 104/100 */;
+  margin: 0 auto;
+  height: 100%;
+}
+.category ul li a p {
+  font-size: 0.24rem /* 24/100 */;
+  line-height: 0.5rem /* 50/100 */;
+}
+.product {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.1rem /* 10/100 */;
+  background-color: #ff841d;
+}
+.product .title {
+  padding: 0 0.2rem /* 20/100 */;
+}
+.product .title .title-icon {
+  margin-top: 0.15rem /* 15/100 */;
+  width: 0.4rem /* 40/100 */;
+  height: 0.4rem /* 40/100 */;
+}
+.product .title p {
+  font-size: 0.34rem /* 34/100 */;
+  line-height: 0.7rem /* 70/100 */;
+  color: white;
+}
+.product ul {
+  width: 100%;
+  background-color: #fff;
+}
+.product ul li {
+  width: 100%;
+  height: 2.6rem /* 260/100 */;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+  padding: 0.1rem /* 10/100 */;
+}
+.product ul li .left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+.product ul li .left a {
+  display: block;
+}
+.product ul li .left a img {
+  width: 100%;
+  height: 100%;
+  font-size: 0.15rem /* 15/100 */;
+}
+.product ul li .right {
+  float: right;
+  width: 70%;
+  height: 100%;
+  padding: 0.1rem /* 10/100 */;
+}
+.product ul li .right p {
+  font-size: 0.3rem /* 30/100 */;
+  margin-top: 0.14rem /* 24/100 */;
+}
+.product ul li .right p:last-child {
+  font-size: 0.24rem /* 24/100 */;
+  color: #999;
+  margin-top: 0.6rem /* 70/100 */;
+}
+.product ul li a {
+  display: block;
+  height: 100%;
+}
+.morecheap {
+  width: 100%;
+  height: 0.85rem /* 85/100 */;
+  background-color: #fff;
+  font-size: 0.27rem /* 27/100 */;
+  text-align: center;
+  padding: 0.2rem /* 50/100 */ 0.2rem /* 20/100 */ 0 0.2rem /* 20/100 */;
+}
+.morecheap .morecheapBtn {
+  height: 0.64rem /* 64/100 */;
+  width: 100%;
+  border: 0.02rem /* 2/100 */ solid #ccc;
+  border-radius: 10px;
+  font-size: 0.27rem /* 27/100 */;
+  background-color: #fbfbfb;
+}
+.brand_rink {
+  background-color: #efefef;
+  width: 100%;
+  height: 1.15rem /* 115/100 */;
+  padding-top: 0.13rem /* 13/100 */;
+}
+.brand_rink .brand_title {
+  background-color: #ff841d;
+  padding: 0 0.2rem /* 20/100 */;
+  font-size: 0.34rem /* 34/100 */;
+  line-height: 0.7rem /* 70/100 */;
+  color: white;
+}
+.brand_rink .brand_title .brand_title-icon {
+  margin-top: 0.15rem /* 15/100 */;
+  width: .4rem;
+}

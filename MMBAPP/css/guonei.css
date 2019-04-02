@@ -1,0 +1,68 @@
+.mmm_main {
+  width: 100%;
+  background-color: #fff;
+}
+/* 商品列表 */
+.productlist {
+  padding-bottom: 0.7rem /* 70/100 */;
+  width: 100%;
+}
+.productlist ul {
+  width: 100%;
+  background-color: #fff;
+}
+.productlist ul li {
+  width: 50%;
+  float: left;
+  height: 5.3rem /* 530/100 */;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+  padding: 0 .1rem;
+}
+.productlist ul li .left {
+  width: 100%;
+}
+.productlist ul li .left img {
+  width: 100%;
+  height: 3.4rem /* 340/100 */;
+  font-size: 0.24rem /* 24/100 */;
+  display: block;
+}
+.productlist ul li .right {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */ 0 0.2rem 0.1rem;
+}
+.productlist ul li .right p {
+  font-size: 0.25rem /* 30/100 */;
+  margin-left: 0.1rem /* 10/100 */;
+}
+.productlist ul li .right p:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.productlist ul li .right p:nth-child(2) {
+  line-height: 0.45rem /* 30/100 */;
+  margin-bottom: 0.05rem /* 5/100 */;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.productlist ul li .right p:last-child {
+  font-size: 0.25rem /* 25/100 */;
+  color: #999;
+  line-height: 0.35rem /* 65/100 */;
+}
+.productlist ul li a {
+  display: block;
+  height: 100%;
+}
+.productlist ul li:nth-child(odd) {
+  border-right: 0.01rem /* 2/100 */ solid #ccc;
+}
+.productlist ul li:nth-child(even) {
+  border-left: 0.01rem /* 2/100 */ solid #ccc;
+}

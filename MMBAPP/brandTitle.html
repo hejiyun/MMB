@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/pinpaidaquan.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header ">
+           <div class="h_main clearfix">
+               <div class=" h_left fl">
+                   <img src="images/header_logo.png" alt="">
+               </div>
+               <div class="h_right fr">
+                   <img src="images/header_app.png" alt="">
+               </div>
+           </div>
+       </div>
+       <!-- 慢慢买搜索框 -->
+       <div class="search clearfix">
+               <input class="fl" type="text"  placeholder="请输入你想比价的商品">
+           <button class="searchBtn">搜索</button>
+       </div>
+       
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+               <!-- 面包屑导航 -->
+               <div class="navagation clearfix">
+                    <ul class="fl">
+                        <li>
+                            <a href="index.html"><span>首页&gt;</span></a>
+                         </li>
+                        <li>
+                            <a href="category.html"><span>全部分类&gt;</span></a>
+                         </li>
+                    </ul>
+                </div>
+                <!-- 热门品牌排行 -->
+                <div class="hot">
+                    <div class="hot_content">
+                      <span>热门品牌排行</span>
+                    </div>
+                </div>
+                <!-- 热门品牌列表 -->
+                <div class="hot_list">
+                    <ul class="first_list">
+                    </ul>
+                </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="../images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li class="firstli clearfix" >
+            <a href="pinpaixiangqin.html?brandTitleId={{v.brandTitleId}}&brandTitle={{v.brandTitle}}">
+            <span class="fl">{{v.brandTitle}}</span>
+            <span class="fr">∨</span>
+           </a>
+         </li>
+        {{/each}}
+        </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/brandTitle.js"></script>
+</body>
+</html>

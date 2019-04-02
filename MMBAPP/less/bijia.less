@@ -1,0 +1,210 @@
+.mmm_main{
+    width: 100%;
+  
+}
+
+/* 面包屑导航 */
+.navagation{
+     width: 100%;   
+     height: .75rem /* 75/100 */;
+     background-color: rgb(240,240,240);
+     padding: 0 .12rem /* 12/100 */;
+     border-top:.02rem /* 2/100 */ solid #ccc;
+     border-bottom:.02rem /* 2/100 */ solid #ccc;
+     ul{
+         margin-top:.19rem /* 9/100 */;
+         overflow: hidden;
+         font-size: .27rem /* 27/100 */;
+         li{
+             float: left;
+         }
+     }
+     .screening{
+         margin-top:.07rem /* 7/100 */;
+         width: 1.24rem /* 124/100 */;
+         height: .6rem /* 60/100 */;
+         border-radius: .15rem /* 5/100 */;
+         color: black;
+         font-size: .27rem;
+         background-color: rgb(231,231,231);
+     }
+}
+
+/* 商品详情 */
+.product{
+    width: 100%;
+    background-color: #fff;
+    .introduce{
+        width: 100%;
+        height: 5.04rem /* 504/100 */;
+        padding: 40/100rem;
+        font-size: .37rem /* 34/100 */;
+        .productName{
+            width: 100%;
+            height: 25% /* 103/100 */;
+            text-align: center;
+        }
+        .product_img{
+            width: 100%;
+            height: 75% /* 400/100 */ /* 400/100 */;
+            position: relative;
+            img{
+                width: 3.5rem /* 350/100 */;
+                margin: 0 auto;
+                font-size: .15rem /* 15/100 */;
+            }
+            .icon_collect{
+                position: absolute;
+                bottom:0rem /* 15/100 */;
+                right:0rem /* 30/100 */;
+                width: .8rem /* 80/100 */;
+                height: .8rem /* 80/100 */;
+                border-radius:50% ;
+                text-align: center;
+                line-height: .8rem;
+                font-size: .27rem /* 27/100 */;
+                color: white;
+                background-color: green;
+            }
+        }
+    }
+    ul{
+        width: 100%;
+        height: .65rem /* 65/100 */;
+        border-top:.02rem /* 2/100 */ solid rgb(201, 82, 0);
+        border-bottom:.02rem /* 2/100 */ solid rgb(201, 82, 0);
+        font-size: .38rem /* 38/100 */;
+        background-color: rgb(255,132,29);
+        li{
+            width: 33.33%;
+            float: left;
+            height: 100%;
+            border-right: .02rem /* 2/100 */ solid rgb(201, 82, 0);
+           background-color: rgb(255,202,57);
+            a{
+                display: block;
+                text-align: center;
+                line-height: .65rem /* 65/100 */;
+            }
+        }
+        li:last-child{
+            border-right:none;
+        }
+        li:first-child{
+            background-color: rgb(255,156,27);
+        }
+    }
+}
+.tablere{
+    width: 100%;
+    height: 2.15rem /* 215/100 */;
+    position: relative;
+}
+ table{
+    font-size: .34rem /* 34/100 */;
+    width: 100%;
+    tr{
+        height: .9rem /* 90/100 */;
+        img{
+            width: 50%;
+            margin: 0 auto;
+            margin-top:.3rem /* 30/100 */; 
+        }
+    }
+    tr:first-child{
+        td:nth-child(3),td:nth-child(4){
+            text-align: right
+        }
+        td:nth-child(4){
+            width: 1.5rem;
+            padding-right: .02rem /* 2/100 */;
+        }
+        td:nth-child(1){
+            width: .6rem /* 60/100 */;
+            height: .6rem /* 60/100 */;
+        }
+        span{
+            display: inline-block;
+            width: 1.12rem /* 112/100 */!important;
+            height: .48rem /* 48/100 */!important;
+            border-radius: .12rem /* 12/100 */!important;
+            text-align: center !important;
+            line-height: .48rem /* 48/100 */!important;
+            background-color: #ff5500 !important;
+            color: #fff !important;
+            font-size: .28rem /* 28/100 */ !important;
+        }
+    }
+}
+.text{
+    position: absolute;
+    left: 0;
+    top:45%;
+    width: 100%;
+    height: 1.2rem /* 120/100 */;
+    border-top:.02rem /* 2/100 */ solid #ccc;
+    border-bottom:.08rem /* 2/100 */ solid rgb(118,118,118);
+    z-index: 999;
+    font-size: .26rem /* 26/100 */;
+    padding-left: .15rem /* 15/100 */;
+    padding-right: .4rem /* 40/100 */;
+    padding-top: .1rem /* 10/100 */;
+    color: #999;
+     
+}
+/* 用户评价 */
+
+.comment{
+    width: 100%;
+    background-color: #fff;
+    border-top:.04rem /* 2/100 */ solid #fff; 
+    .comment_title{
+        width: 100%;
+        height: .65rem /* 65/100 */;
+        background-color: rgb(219,219,219);
+        text-align: center;
+        font-size: .3rem /* 30/100 */;
+        color: black;
+        line-height: .65rem /* 65/100 */;
+    }
+    ul{
+        width: 100%;
+        background-color: #fff;
+        li{
+            width: 100%;
+            font-size: .25rem /* 28/100 */;
+            padding:  .25rem /* 25/100 */ .2rem /* 20/100 */ 0  .2rem /* 20/100 */;
+            border-bottom:.02rem /* 2/100 */ solid #ccc;
+            .user{
+                width: 100%;
+                height: .75rem;
+                color: #999;
+                font-size: .25rem;
+                p:first-child{
+                    font-size: .2rem /* 20/100 */;
+                }
+            }
+            .contener{
+                p{
+                    line-height: .45rem;
+                } 
+            }
+        }
+    }
+
+}
+.morecomment{
+    width: 100%;
+    height: 1.45rem /* 145/100 */;
+    background-color: #fff;
+    padding: .15rem /* 15/100 */;
+    font-size: .28rem /* 28/100 */;
+    .morecommentBtn{
+        margin-top: .15rem /* 15/100 */;
+        width: 100%;
+        height: .65rem /* 65/100 */;
+        font-size: 28/100rem;
+        border-radius: .15rem /* 15/100 */;
+        outline: none;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/shenqian.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header  ">
+
+           <div class="h_main  clearfix">
+               <div class=" h_title ">
+                   <span>省钱控-最新优惠</span>
+                   <div class="h_right_product">
+                        <img src="images/header_app.png" alt="">
+                    </div>
+               </div>
+            
+           </div>
+       </div>
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+            <!-- 超值折扣商品区 -->
+            <div class="product">
+                    <ul class="zhekou_ul">
+                  
+                    </ul>
+                     <!-- 分页器 -->
+           <div class="sorter">
+                <div class="sorter_content">
+                    <ul class="clearfix">
+                         <li>
+                            <button class="sorter_preBtn">上一页</button>
+                         </li>
+                         <li> 
+                           <select class="sorter_select" name="" id="">
+                           </select>
+                         </li>
+                        <li> <button class="sorter_nextBtn">下一页</button></li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+            <li class="clearfix">
+                    <a href="discountproduct.html?productId={{v.productId}}">
+                    <div class="left">
+                        {{@v.productImg2}}
+                    </div>
+                    <div class="right">
+                        <p><span>{{v.productName}}</span><span class="gold">{{v.productPinkage}}</span></p>
+                        <p><span>{{v.productFrom}} | </span><span>{{v.productTime}}</span><span class="fr">{{v.productComCount.replace(/[^0-9]/ig,"")}}</span></p>
+                    </div>
+                </a>
+                </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="fytpl">
+        {{each info v}}
+        <option data-id={{i+1}}>{{v}}</option>
+         {{/each}}
+       </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/moneyctrl.js"></script>
+</body>
+</html>

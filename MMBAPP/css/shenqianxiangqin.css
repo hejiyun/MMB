@@ -1,0 +1,185 @@
+.mmm_main {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0.25rem /* 25/100 */;
+  padding-bottom: 0.35rem /* 35/100 */;
+}
+.right {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */ 0 0.2rem 0.1rem;
+}
+.right p {
+  font-size: 0.25rem /* 30/100 */;
+  margin-left: 0.1rem /* 10/100 */;
+  margin-bottom: 0.3rem /* 30/100 */;
+}
+.right p:last-child {
+  font-size: 0.25rem /* 25/100 */;
+  color: #999;
+  line-height: 0.35rem /* 65/100 */;
+}
+.comment {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */;
+}
+.comment .left {
+  width: 100%;
+  font-size: 0.28rem /* 28/100 */;
+  padding: 0 0.1rem /* 10/100 */;
+}
+.comment .left img {
+  width: 2.6rem /* 260/100 */;
+  height: 2rem /* 350/100 */;
+  display: block;
+  float: right;
+  overflow: hidden;
+}
+.right1 {
+  width: 100%;
+  margin-bottom: 0.45rem /* 45/100 */;
+}
+.right1 img {
+  width: 100%;
+  margin: 0 auto;
+}
+.buy {
+  width: 100%;
+  height: 2.4rem /* 240/100 */;
+  font-size: 0.25rem /* 25/100 */;
+  padding: 0 0.4rem /* 40/100 */;
+}
+.buy button {
+  width: 100%;
+  height: 0.6rem /* 60/100 */;
+  background-color: #ff9000;
+  font-size: 0.25rem /* 25/100 */;
+  outline: none;
+  border-radius: 0.1rem /* 5/100 */;
+  border: none;
+  color: white;
+  margin-top: 0.9rem /* 90/100 */;
+}
+.advertisement {
+  width: 100%;
+  padding: 0 0.2rem /* 20/100 */;
+}
+.advertisement img {
+  width: 100%;
+}
+.sendmsg {
+  width: 100%;
+  margin-top: 0.2rem /* 20/100 */;
+  font-size: 0.32rem /* 32/100 */;
+}
+.tit {
+  width: 100%;
+  height: 0.75rem /* 75/100 */;
+  line-height: 0.75rem /* 75/100 */;
+  padding-left: 0.1rem /* 10/100 */;
+}
+.reply {
+  width: 100%;
+  height: 2.3rem /* 230/100 */;
+  padding: 0 0.25rem /* 25/100 */;
+  position: relative;
+  outline: none;
+}
+.reply textarea {
+  width: 100%;
+  height: 1.55rem /* 145/100 */;
+  resize: none;
+  border-top: 0.02rem /* 2/100 */ solid #ccc;
+}
+.reply .ctrl {
+  position: absolute;
+  left: 0;
+  top: 1.5rem /* 150/100 */;
+  width: 100%;
+  height: 0.75rem /* 75/100 */;
+  border: 0.02rem /* 2/100 */ solid #ccc;
+  background-color: #fbfbfb;
+}
+.reply .ctrl input {
+  width: 2rem /* 200/100 */;
+  height: 0.73rem /* 75/100 */;
+  background-color: #ff841d;
+  float: right;
+  border: none;
+}
+.reply .form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.buy_list {
+  width: 2.8rem /* 280/100 */;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px #999;
+}
+.buy_list ul {
+  width: 100%;
+  border-left: 0.02rem /* 2/100 */ solid #ccc;
+  border-right: 0.02rem /* 2/100 */ solid #ccc;
+  box-shadow: .02rem #ccc;
+  padding: 0 0.2rem /* 10/100 */;
+}
+.buy_list ul li {
+  width: 100%;
+  height: 0.45rem /* 43/100 */;
+}
+.buy_list ul li a {
+  width: 100%;
+  height: 0.44rem /* 44/100 */;
+  display: block;
+  border-bottom: 0.02rem /* 2/100 */ dashed #ccc;
+  position: relative;
+}
+.buy_list ul li a span {
+  font-size: 0.25rem /* 25/100 */;
+  line-height: normal;
+  float: left;
+}
+.buy_list ul li a span strong {
+  color: #daa520;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list ul {
+  width: 100%;
+  padding: 0.2rem /* 20/100 */;
+}
+.list ul li {
+  width: 100%;
+  position: relative;
+  padding-left: 1.1rem /* 110/100 */;
+  height: 1.2rem /* 120/100 */;
+}
+.list ul li .userimg {
+  position: absolute;
+  left: 0;
+  top: 0.05rem /* 15/100 */;
+  width: 0.9rem /* 90/100 */;
+  height: 0.9rem /* 90/100 */;
+}
+.list ul li .userimg img {
+  width: 100%;
+  border-radius: 50%;
+  font-size: 0.15rem /* 15/100 */;
+}
+.list ul li .con {
+  width: 100%;
+  font-size: 0.2rem /* 20/100 */;
+}
+.list ul li .con .username {
+  float: left;
+  color: skyblue;
+}
+.list ul li .con .time {
+  float: right;
+  color: #999;
+}
+.list ul li .con .content {
+  font-size: 0.3rem /* 30/100 */;
+  margin-top: 0.2rem /* 20/100 */;
+}

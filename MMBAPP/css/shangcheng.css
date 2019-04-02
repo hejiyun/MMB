@@ -1,0 +1,33 @@
+.mmm_main {
+  width: 100%;
+  background-color: #fff;
+}
+.mmm_main .shangchang_logo {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */ 0.9rem /* 85/100 */ 0.6rem /* 60/100 */ 0.85rem;
+}
+.mmm_main .shangchang_logo ul {
+  width: 100%;
+}
+.mmm_main .shangchang_logo ul li {
+  height: 0.85rem /* 85/100 */;
+  margin-right: 0.1rem /* 10/100 */;
+  margin-top: 0.1rem /* 10/100 */;
+  font-size: .3rem;
+  border: 0.02rem /* 2/100 */ solid #ccc;
+  background-color: #f4f4f4;
+  float: left;
+  padding: 0.15rem /* 15/100 */ 0.2rem /* 20/100 */;
+}
+.mmm_main .shangchang_logo ul li img {
+  width: 0.32rem /* 32/100 */;
+  display: block;
+  margin-top: 0.15rem /* 10/100 */;
+  margin-right: 0.15rem /* 15/100 */;
+}
+.mmm_main .shangchang_logo ul li span {
+  line-height: 0.55rem /* 85/100 */;
+}
+.mmm_main .shangchang_logo ul li a {
+  display: block;
+}

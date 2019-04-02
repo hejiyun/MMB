@@ -1,0 +1,72 @@
+.mmm_main{
+    width: 100%;
+    background-color: #fff;
+}
+
+/* 商品列表 */
+.productlist{
+    padding-bottom:.7rem /* 70/100 */;
+    width: 100%; 
+
+    ul{
+        width: 100%;
+        background-color: #fff;
+        li{
+            width: 50%;
+            float: left;
+            height: 5.3rem /* 530/100 */;
+            border-bottom: .02rem /* 2/100 */ solid #ccc;
+            padding: 0 .1rem;
+            .left{
+                width: 100%;
+                
+                    img{
+                        width: 100%;
+                        height: 3.4rem /* 340/100 */;
+                        font-size: .24rem /* 24/100 */;
+                        display: block
+                    }
+                
+            }
+            .right{
+                width: 100%;
+                padding: .1rem /* 10/100 */ 0  .2rem  .1rem;
+                p{
+                    font-size: .25rem /* 30/100 */;
+                    margin-left:.1rem /* 10/100 */; 
+                }
+                p:first-child{
+                    overflow:hidden; 
+                 text-overflow:ellipsis;
+                 display:-webkit-box; 
+              -webkit-box-orient:vertical;
+                -webkit-line-clamp:2; 
+                }
+                p:nth-child(2){
+                    line-height: .45rem /* 30/100 */;
+                    margin-bottom:.05rem /* 5/100 */; 
+                    overflow:hidden; 
+                    text-overflow:ellipsis;
+                    display:-webkit-box; 
+                 -webkit-box-orient:vertical;
+                   -webkit-line-clamp:1; 
+                }
+                p:last-child{
+                    font-size: .25rem /* 25/100 */;
+                    color: #999;
+                    line-height: .35rem /* 65/100 */
+                }
+            }
+            a{
+                display: block;
+                height: 100%;
+            }
+        }
+        li:nth-child(odd){
+            border-right: .01rem /* 2/100 */ solid #ccc;
+        }
+        li:nth-child(even){
+            border-left: .01rem /* 2/100 */ solid #ccc;
+        }
+    }
+    }

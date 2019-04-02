@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/pinpaixiangqin.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header ">
+           <div class="h_main clearfix">
+               <div class=" h_left fl">
+                   <img src="images/header_logo.png" alt="">
+               </div>
+               <div class="h_right fr">
+                   <img src="images/header_app.png" alt="">
+               </div>
+           </div>
+       </div>
+       <!-- 慢慢买搜索框 -->
+       <div class="search clearfix">
+               <input class="fl" type="text"  placeholder="请输入你想比价的商品">
+           <button class="searchBtn">搜索</button>
+       </div>
+       
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+           <!-- 面包屑导航 -->
+           <div class="navagation clearfix">
+                <ul class="daohang fl">
+                
+                </ul>
+            </div>
+           <!-- 平板电视哪个好 -->
+           <div class="nav">
+               
+           </div>
+           <!-- 电视销量列表 -->
+           <div class="sale_list">
+               <ul class="brand_tpl">
+               </ul>
+           </div>
+           <!-- 平板电脑销量排行 -->
+           <div class="nav2">
+               
+           </div>
+           <!-- 平板电视销量列表 -->
+           <div class="sale2_list">
+                <ul class="xiaoliang_tpl">   
+                </ul>
+           </div>
+           <!-- 平板电视最新评论 -->
+           <div class="nav3">
+               
+           </div>
+           <!-- 平板电视评论列表 -->
+           <div class="comment_list">
+                <ul class="comment_tpl">
+                
+                    
+                </ul>
+           </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+    {{each result v i }}
+       <li class="clearfix" data-id={{v.brandTitleId}}>
+         <a href="productList.html?categoryId={{v.categoryId}}" data-id={{v.brandId}}>
+        <div class="sale_number fl">
+            <span>{{i+1}}</span>
+        </div>
+        <div class="news fl">
+            <p>{{v.brandName}}</p>
+            <p>{{v.brandInfo}}</p>
+        </div>
+         <span class=" sale_list_nex fr">＞</span>
+        </a>
+      </li>
+    {{/each}}
+    </script>
+    <script type="text/html" id="xiaotpl">
+    {{each result v i }}
+    <li class="clearfix" data-id={{v.productId}}>
+        <a href="#">
+        <div class="left">
+          {{@v.productImg}}
+        </div>
+        <div class="right">
+          <p>{{v.productName}}</p>
+          <p class="red">{{v.productPrice}}</p>
+          <p><span>{{v.productQuote}} </span><span>  {{v.productCom}}</span></p>
+        </div>
+    </a>
+      </li>
+    {{/each}}
+    </script>
+    <script type="text/html" id="commenttpl">
+    {{each result v i }}
+    <li class="clearfix">
+      <div class="xuanran clearfix">
+      </div>
+        <div class="appraise">
+
+            <div class="user">
+                <p class="  clearfix"><span class="fl green">{{v.comName}} :</span> <span class="fr">{{v.comTime}}</span></p>
+             </div>
+             <div class="contener">
+             <p>{{v.comContent}} 评论发布自 {{v.comFrom}}</p>
+          </div>
+        </div>
+      </li>
+    {{/each}}
+    </script>
+    <script type="text/html" id="xuanrantpl">
+    {{each result v i }}
+    {{if i === 0}}
+    <div class="left">
+        <a href="javascript:;">{{@v.productImg}}</a>
+      </div>
+      <div class="right">
+        <p>{{v.productName}}</p>
+      </div>
+      {{/if}}
+    {{/each}}
+    </script>
+    <script type="text/html" id="dhtpl">
+        {{each info v}}
+            <li>
+                <a href="index.html"><span>首页&gt;</span></a>
+            </li>
+            <li>
+                <a href="category.html"><span>全部分类&gt;</span></a>
+            </li>
+            <li>
+                    <a href="category.html"><span>{{v}}&gt;</span></a>
+                </li>
+            {{/each}}
+       </script>
+       
+       <script type="text/html" id="wenzitpl">
+        {{each info }}
+        <span>{{info.brandtext}}哪个牌子好</span>
+        {{/each}}
+       </script>
+       <script type="text/html" id="wenzitpl2">
+        {{each info }}
+        <span>{{info.brandtext}}产品销量排行</span>
+        {{/each}}
+       </script>
+       <script type="text/html" id="wenzitpl3">
+        {{each info }}
+        <span>{{info.brandtext}}最新评论</span>
+        {{/each}}
+       </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/pinpaixiangqin.js"></script>
+</body>
+</html>

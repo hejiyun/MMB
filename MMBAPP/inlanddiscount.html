@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/guonei.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header  ">
+
+           <div class="h_main  clearfix">
+               <div class=" h_title ">
+                   <span>国内折扣</span>
+                   <div class="h_right_product">
+                        <img src="images/header_app.png" alt="">
+                    </div>
+               </div>
+            
+           </div>
+       </div>
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+           <!-- 商品列表 -->
+           <div class="productlist">
+            <ul class=" tpl_ul clearfix">
+             
+               
+            </ul>
+        </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+    {{each result v i }}
+       {{if i < 6}}
+         <li>
+            <a href="discountproduct.html?productId={{v.productId}}">
+            <div class="left">
+              {{@v.productImg}}
+             </div>
+            <div class="right">
+                <p>{{v.productName}}</p>
+                <p class="red">{{v.productPrice}}</p>
+                <p><span>{{v.productFrom}} |</span><span> {{v.productTime}}</span></p>
+            </div>
+        </a>
+        </li>
+        {{/if}}
+    {{/each}}
+    </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+</body>
+</html>

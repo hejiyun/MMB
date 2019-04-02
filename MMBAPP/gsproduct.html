@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/coudanpin.css">
+</head>
+<body>
+    <div class="container">
+       <!-- 慢慢买头部 -->
+       <div class="mmm_header  ">
+
+           <div class="h_main  clearfix">
+               <div class=" h_title ">
+                   <span>凑单品</span>
+                   <div class="h_right_product">
+                        <img src="images/header_app.png" alt="">
+                    </div>
+               </div>
+            
+           </div>
+       </div>
+       <!-- 慢慢买主体 -->
+       <div class="mmm_main">
+           <!-- 地区列表 -->
+           <div class="regin">
+               <div class="regin_list">
+                       <div class="nav1">
+                            <a href="#" class="ca" data-id= "0" >京东 ▲</a>
+                            <ul class="second hide">
+                        
+                            </ul>
+                       </div>
+                       <div class="nav2">
+                            <a href="#" class="ca" data-id="0">华北 ▲</a>
+                            <ul class="second hide">
+                        
+                            </ul>
+                       </div>  
+                      <div class="nav3">
+                            <a href="#" class="ca">全部价格 ▲</a>
+                            <ul class="second hide">
+                            </ul>
+                      </div>
+               </div>
+           </div>
+           <!-- 地区商品 -->
+           <div class="regin_product">
+               <ul class="product_tpl clearfix">
+               
+                   
+               </ul>
+           </div>
+       </div>
+       <!-- 慢慢买底部 -->
+       <div class="mmm_footer">
+           <ul class="clearfix">
+               <li><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+               <li><a href="#"><img src="images/top.jpg" alt=""><span>返回顶部</span></a></li>
+           </ul>
+           <div class="f_active">
+               <p><span class="red">手机APP下载 </span><span class="black">慢慢买手机版 </span><span>--</span><span> 掌上比价平台</span></p>
+               <p>m.manmanbuy.com</p>
+           </div>
+       </div>
+    </div>
+    <script type="text/html" id="tpl">
+    {{each result v i }}
+     <li data-id="{{v.shopId}}">{{v.shopName}}</li>
+    {{/each}}
+    </script>
+    <script type="text/html" id="tpl1">
+    {{each result v i }}
+     <li data-id="{{v.areaId}}">{{v.areaName}}</li>
+    {{/each}}
+    </script>
+    <script type="text/html" id="producttpl">
+    {{each result v i }}
+    <li>
+            <a href="" data-id={{v.productId}}>
+                <img src="{{v.productImg}}" alt="">
+                <p >{{v.productName}}</p>
+            </a>
+            <div class="coudan clearfix">
+                <span class=" red fl">{{v.productPrice}}</span>
+                <span class="fr">去凑单</span>
+            </div>
+          </li>
+    {{/each}}
+    </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Template/template-web.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/gsproduct.js"></script>
+</body>
+</html>

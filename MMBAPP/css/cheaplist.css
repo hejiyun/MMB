@@ -1,0 +1,70 @@
+.container .mmm_header {
+  background-color: #f4483e;
+}
+.nav {
+  width: 100%;
+  background-color: #fff;
+  height: 0.75rem /* 75/100 */;
+  text-align: center;
+}
+.nav p {
+  font-size: 0.24rem /* 24/100 */;
+  color: #999;
+  line-height: 0.75rem /* 75/100 */;
+}
+/* 商品列表 */
+.cheap_list {
+  padding-bottom: 0.5rem /* 50/100 */;
+  background-color: #fff;
+}
+.cheap_list ul {
+  width: 100%;
+}
+.cheap_list ul li {
+  width: 100%;
+  height: 2.4rem /* 260/100 */;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+  padding: 0.1rem /* 10/100 */;
+  padding-top: 0.2rem /* 20/100 */;
+}
+.cheap_list ul li .left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+.cheap_list ul li .left img {
+  width: 2rem /* 200/100 */;
+  margin: 0 auto;
+}
+.cheap_list ul li .right {
+  float: right;
+  width: 70%;
+  height: 100%;
+  padding: 0 0.1rem /* 10/100 */;
+}
+.cheap_list ul li .right p {
+  font-size: 0.25rem /* 30/100 */;
+  color: #333;
+}
+.cheap_list ul li .right p:last-child {
+  line-height: 0.95rem /* 95/100 */;
+  color: #ec7c3f;
+}
+.cheap_list ul li a {
+  display: block;
+  height: 100%;
+}
+.showpic {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  z-index: 999;
+}
+.showpic .imgBox {
+  width: 4rem /* 400/100 */;
+  height: 4rem /* 400/100 */;
+  margin: 1rem auto ;
+}

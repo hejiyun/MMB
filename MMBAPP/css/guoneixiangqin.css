@@ -1,0 +1,113 @@
+.mmm_main {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0.25rem /* 25/100 */;
+  padding-bottom: 0.35rem /* 35/100 */;
+}
+.right {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */ 0 0.2rem 0.1rem;
+}
+.right p {
+  font-size: 0.25rem /* 30/100 */;
+  margin-left: 0.1rem /* 10/100 */;
+}
+.right p:nth-child(2) {
+  line-height: 0.45rem /* 30/100 */;
+  margin-bottom: 0.05rem /* 5/100 */;
+}
+.right p:last-child {
+  font-size: 0.25rem /* 25/100 */;
+  color: #999;
+  line-height: 0.35rem /* 65/100 */;
+}
+.comment {
+  width: 100%;
+  padding: 0.1rem /* 10/100 */;
+}
+.comment .left {
+  width: 66.66%;
+  font-size: 0.28rem /* 28/100 */;
+}
+.comment .left img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.comment .right {
+  width: 33.33%;
+}
+.comment .right img {
+  width: 100%;
+}
+.buy {
+  width: 100%;
+  height: 2.4rem /* 240/100 */;
+  font-size: 0.25rem /* 25/100 */;
+  padding: 0 0.4rem /* 40/100 */;
+}
+.buy button {
+  width: 100%;
+  height: 0.6rem /* 60/100 */;
+  background-color: #ff9000;
+  font-size: 0.25rem /* 25/100 */;
+  outline: none;
+  border-radius: 0.1rem /* 5/100 */;
+  border: none;
+  color: white;
+  margin-top: 0.9rem /* 90/100 */;
+}
+.advertisement {
+  width: 100%;
+  padding: 0 0.2rem /* 20/100 */;
+}
+.advertisement img {
+  width: 100%;
+}
+.sendmsg {
+  width: 100%;
+  height: 3.8rem /* 380/100 */;
+  margin-top: 0.2rem /* 20/100 */;
+}
+.sendmsg div {
+  width: 100%;
+  height: 0.75rem /* 75/100 */;
+  font-size: 30px;
+  line-height: 0.75rem /* 75/100 */;
+  padding-left: 0.1rem /* 10/100 */;
+}
+.sendmsg div:nth-child(2) {
+  height: 2.3rem /* 230/100 */;
+  padding: 0 0.2rem /* 20/100 */;
+}
+.sendmsg div:nth-child(2) div {
+  width: 100%;
+  border: 0.02rem /* 2/100 */ solid #ccc;
+  height: 100%;
+  position: relative;
+}
+.sendmsg div:nth-child(2) div #text {
+  width: 100%;
+  resize: none;
+  border: none;
+  height: 100%;
+}
+.sendmsg div:nth-child(2) div .sendmsgBtn {
+  position: absolute;
+  width: 100%;
+  height: 0.75rem /* 75/100 */;
+  left: 0;
+  top: 1.5rem /* 150/100 */;
+  border: none;
+  border-top: 0.02rem /* 2/100 */ solid #ccc;
+  padding-right: 0;
+  background-color: #fbfbfb;
+}
+.sendmsg div:nth-child(2) div .sendmsgBtn span {
+  width: 2rem /* 200/100 */;
+  height: 0.75rem /* 75/100 */;
+  background-color: #ff841d;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,252 @@
+/* reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style:none;
+}
+
+a,a:hover,a:link,a:visited,a:active{
+    color: #666;
+    text-decoration: none;
+}
+
+input[type="button"],input[type="submit"],input[type="text"],textarea,button{
+    outline: none;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+img{
+    display: block;
+    font-size: .15rem /* 15/100 */;
+    width: 100%;
+}
+
+
+/* comment css*/
+html{
+    font-size: 100px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after,.clearfix::before{
+    content:'';
+    height: 0;
+    display: block;
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.red{
+    color: red;
+}
+.black{
+    color: #000;
+}
+
+.hide{
+    display: none;
+}
+.green{
+    color: green;
+}
+.th_line{
+    text-decoration: line-through;
+}
+.hui{
+    color: #999;
+}
+.ft_22{
+    font-size: .22rem /* 22/100 */;
+}
+.ft_20{
+    font-size: .20rem /* 22/100 */;
+}
+.ft_38{
+    font-size: .38rem /* 22/100 */;
+}
+.ft_34{
+    font-size: .34rem /* 22/100 */;
+}
+.ft_24{
+    font-size: .24rem /* 22/100 */;
+}
+.dash{
+    border: .02rem /* 2/100 */ dashed red;
+}
+.blue{
+    color: skyblue;
+}
+
+
+/* 搜索框页面头尾共享样式 */
+.container {
+    width: 100%;
+    background-color: #ccc;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    .mmm_header,.mmm_footer{
+        position: absolute;
+        left: auto;
+        top: 0;
+        width: 100%;
+        background-color: rgb(255,132,29);
+        height: 1rem;
+    }
+    .mmm_footer{
+        bottom:0;
+        top:auto;
+        background-color: rgb(239,239,239);
+        height: 2rem;
+    }
+}
+.h_main{
+    margin-top:.12rem /* 12/100 */;
+    position: relative;
+    .h_left{
+        margin-top: .13rem /* 13/100 */;
+        padding-left: .3rem /* 30/100 */;
+        img{
+            width: 3.8rem /* 380/100 */;
+            height: .6rem /* 60/100 */;
+        }
+    } 
+    .h_right{
+        padding-right: .1rem /* 10/100 */;
+        img{
+            width: .68rem /* 68/100 */;
+            margin-top: .08rem;
+        }
+    }
+
+}
+.search{
+    width: 100%;
+    height: 1.04rem /* 103/100 */;
+    // background-color: red;
+    position: relative;
+    padding-left: .2rem /* 20/100 */;
+    padding-right: 1.6rem /* 160/100 */;
+    background-color: #fff;
+      input{
+          width: 100%;
+          height: .6rem /* 60/100 */;
+          border-radius: .5rem /* 50/100 */;
+          background-color: #ccc;
+          padding-left: .4rem /* 40/100 */;
+          font-size: .16rem /* 16/100 */;
+          margin: 0;
+          margin-top:.22rem /* 22/100 */; 
+          border: none;
+      }
+    .searchBtn{
+        position: absolute;
+        right:.2rem /* 20/100 */;
+        top:22/100rem;
+        width: 1.3rem /* 130/100 */;
+        height: .6rem /* 60/100 */;
+        border-radius: .5rem /* 50/100 */;
+        background-color: rgb(255,132,29);
+        border: none;
+        font-size: .35rem /* 35/100 */;
+        line-height: .6rem /* 60/100 */;
+        color: white;
+    }
+}
+.mmm_footer{
+    ul{
+        width: 100%;
+        border-top: .02rem /* 2/100 */ solid #ccc;
+        border-bottom: .02rem /* 2/100 */ solid #ccc;
+        li{
+            float: left;
+            width: 33.3%;
+            height: .7rem /* 70/100 */;
+            font-size: .28rem /* 28/100 */;
+            border-right: .02rem /* 2/100 */ solid #ccc;
+           a{
+               width: 100%;
+               color: black;
+               line-height: .7rem;
+               text-align: center;
+               display: block;
+               img{
+                   width: .35rem /* 35/100 */;
+                   height: .35rem /* 35/100 */;
+                   display: inline-block;
+               }
+           }
+        }
+        li:last-child{
+            border-right: none;
+        }
+    }
+    .f_active{
+        height: 1.3rem /* 130/100 */;
+        width: 100%;
+        font-size: .24rem /* 24/100 */;
+        padding-top: .27rem /* 27/100 */;
+        p{
+          color: #999;
+          text-align: center;
+          line-height: .4rem /* 40/100 */
+        }
+    }
+}
+
+
+
+
+/* 无搜索框页面头尾共享样式  */
+
+.h_title{
+    width: 100%;
+    font-size: .5rem;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.h_right_product{
+    position: absolute;
+    right:.1rem /* 10/100 */;
+    top:0;
+    width: 1rem /* 90/100 */;
+   height: 1rem;
+   img{
+       width: .68rem;
+       margin: 0 auto;
+       vertical-align: middle;
+   }
+
+}
+.gold{
+    color: rgb(255,126,42);
+}
+
+
+
+/* 媒体查询 */
+
+
+
+@media screen and (min-width: 320) {
+    html{
+        font-size: 42.6px;
+    }
+}

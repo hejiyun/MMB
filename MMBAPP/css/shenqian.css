@@ -1,0 +1,81 @@
+.mmm_main {
+  width: 100%;
+}
+.product {
+  width: 100%;
+  background-color: #fff;
+}
+.product ul {
+  width: 100%;
+  background-color: #fff;
+}
+.product ul li {
+  width: 100%;
+  height: 2.6rem /* 260/100 */;
+  padding: 0.1rem /* 10/100 */;
+}
+.product ul li .left {
+  float: left;
+  width: 30%;
+  padding-top: 0.26rem /* 26/100 */;
+}
+.product ul li .left img {
+  width: 100%;
+  font-size: 0.15rem /* 15/100 */;
+  height: 100%;
+}
+.product ul li .right {
+  float: right;
+  width: 70%;
+  height: 100%;
+  padding: 0.1rem /* 10/100 */;
+}
+.product ul li .right p {
+  height: 1.7rem;
+  font-size: 0.3rem /* 30/100 */;
+  margin-top: 0.14rem /* 24/100 */;
+}
+.product ul li .right p:last-child {
+  font-size: .24rem;
+  margin-top: 0;
+  color: #999;
+  height: auto;
+}
+.product ul li .right p:first-child {
+  overflow: hidden;
+}
+.product ul li a {
+  display: block;
+  height: 100%;
+}
+.sorter {
+  width: 100%;
+  height: 1.43rem /* 143/100 */;
+  font-size: 0.27rem /* 27/100 */;
+}
+.sorter .sorter_content {
+  width: 100%;
+  height: 0.95rem /* 95/100 */;
+  background-color: #fff;
+}
+.sorter .sorter_content ul {
+  width: 100%;
+  height: 100%;
+}
+.sorter .sorter_content ul li {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.sorter .sorter_content ul li button {
+  width: 1.65rem /* 165/100 */;
+  height: 0.7rem /* 70/100 */;
+  border-radius: 0.05rem /* 15/100 */;
+}
+.sorter .sorter_content ul li .sorter_select {
+  width: 1.54rem /* 154/100 */;
+  height: 0.7rem /* 70/100 */;
+  outline: none;
+  border-right: 0.35rem /* 10/100 */ solid #ccc;
+}

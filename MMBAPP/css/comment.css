@@ -1,0 +1,239 @@
+/* reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  color: #666;
+  text-decoration: none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+textarea,
+button {
+  outline: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+img {
+  display: block;
+  font-size: 0.15rem /* 15/100 */;
+  width: 100%;
+}
+/* comment css*/
+html {
+  font-size: 100px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  height: 0;
+  display: block;
+  font-size: 0;
+  visibility: hidden;
+  clear: both;
+}
+.red {
+  color: red;
+}
+.black {
+  color: #000;
+}
+.hide {
+  display: none;
+}
+.green {
+  color: green;
+}
+.th_line {
+  text-decoration: line-through;
+}
+.hui {
+  color: #999;
+}
+.ft_22 {
+  font-size: 0.22rem /* 22/100 */;
+}
+.ft_20 {
+  font-size: 0.2rem /* 22/100 */;
+}
+.ft_38 {
+  font-size: 0.38rem /* 22/100 */;
+}
+.ft_34 {
+  font-size: 0.34rem /* 22/100 */;
+}
+.ft_24 {
+  font-size: 0.24rem /* 22/100 */;
+}
+.dash {
+  border: 0.02rem /* 2/100 */ dashed red;
+}
+.blue {
+  color: skyblue;
+}
+/* 搜索框页面头尾共享样式 */
+.container {
+  width: 100%;
+  background-color: #ccc;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.container .mmm_header,
+.container .mmm_footer {
+  position: absolute;
+  left: auto;
+  top: 0;
+  width: 100%;
+  background-color: #ff841d;
+  height: 1rem;
+}
+.container .mmm_footer {
+  bottom: 0;
+  top: auto;
+  background-color: #efefef;
+  height: 2rem;
+}
+.h_main {
+  margin-top: 0.12rem /* 12/100 */;
+  position: relative;
+}
+.h_main .h_left {
+  margin-top: 0.13rem /* 13/100 */;
+  padding-left: 0.3rem /* 30/100 */;
+}
+.h_main .h_left img {
+  width: 3.8rem /* 380/100 */;
+  height: 0.6rem /* 60/100 */;
+}
+.h_main .h_right {
+  padding-right: 0.1rem /* 10/100 */;
+}
+.h_main .h_right img {
+  width: 0.68rem /* 68/100 */;
+  margin-top: .08rem;
+}
+.search {
+  width: 100%;
+  height: 1.04rem /* 103/100 */;
+  position: relative;
+  padding-left: 0.2rem /* 20/100 */;
+  padding-right: 1.6rem /* 160/100 */;
+  background-color: #fff;
+}
+.search input {
+  width: 100%;
+  height: 0.6rem /* 60/100 */;
+  border-radius: 0.5rem /* 50/100 */;
+  background-color: #ccc;
+  padding-left: 0.4rem /* 40/100 */;
+  font-size: 0.16rem /* 16/100 */;
+  margin: 0;
+  margin-top: 0.22rem /* 22/100 */;
+  border: none;
+}
+.search .searchBtn {
+  position: absolute;
+  right: 0.2rem /* 20/100 */;
+  top: 0.22rem;
+  width: 1.3rem /* 130/100 */;
+  height: 0.6rem /* 60/100 */;
+  border-radius: 0.5rem /* 50/100 */;
+  background-color: #ff841d;
+  border: none;
+  font-size: 0.35rem /* 35/100 */;
+  line-height: 0.6rem /* 60/100 */;
+  color: white;
+}
+.mmm_footer ul {
+  width: 100%;
+  border-top: 0.02rem /* 2/100 */ solid #ccc;
+  border-bottom: 0.02rem /* 2/100 */ solid #ccc;
+}
+.mmm_footer ul li {
+  float: left;
+  width: 33.3%;
+  height: 0.7rem /* 70/100 */;
+  font-size: 0.28rem /* 28/100 */;
+  border-right: 0.02rem /* 2/100 */ solid #ccc;
+}
+.mmm_footer ul li a {
+  width: 100%;
+  color: black;
+  line-height: .7rem;
+  text-align: center;
+  display: block;
+}
+.mmm_footer ul li a img {
+  width: 0.35rem /* 35/100 */;
+  height: 0.35rem /* 35/100 */;
+  display: inline-block;
+}
+.mmm_footer ul li:last-child {
+  border-right: none;
+}
+.mmm_footer .f_active {
+  height: 1.3rem /* 130/100 */;
+  width: 100%;
+  font-size: 0.24rem /* 24/100 */;
+  padding-top: 0.27rem /* 27/100 */;
+}
+.mmm_footer .f_active p {
+  color: #999;
+  text-align: center;
+  line-height: 0.4rem /* 40/100 */;
+}
+/* 无搜索框页面头尾共享样式  */
+.h_title {
+  width: 100%;
+  font-size: .5rem;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.h_right_product {
+  position: absolute;
+  right: 0.1rem /* 10/100 */;
+  top: 0;
+  width: 1rem /* 90/100 */;
+  height: 1rem;
+}
+.h_right_product img {
+  width: .68rem;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.gold {
+  color: #ff7e2a;
+}
+/* 媒体查询 */
+@media screen and (min-width: 320) {
+  html {
+    font-size: 42.6px;
+  }
+}
